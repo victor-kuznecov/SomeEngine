@@ -1,54 +1,75 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="SomeEngine">
+      <UniqueIdentifier>{6F4BC6A6-5B03-08F4-C40A-E14FB0E1A2E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SomeEngine\Events">
+      <UniqueIdentifier>{73E46411-DFFA-62A7-2872-EEC894C7332F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\SomeEngine\Core.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\SomeEngine.h" />
     <ClInclude Include="src\SomeEngine\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>SomeEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\SomeEngine.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\SomeEngine\Core.h">
+      <Filter>SomeEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\SomeEngine\EntryPoint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SomeEngine\Log.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SomeEngine\Events\Event.h">
-      <Filter>Header Files</Filter>
+      <Filter>SomeEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\SomeEngine\Events\ApplicationEvent.h">
-      <Filter>Header Files</Filter>
+      <Filter>SomeEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SomeEngine\Events\Event.h">
+      <Filter>SomeEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\SomeEngine\Events\KeyEvent.h">
-      <Filter>Header Files</Filter>
+      <Filter>SomeEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\SomeEngine\Events\MouseEvent.h">
-      <Filter>Header Files</Filter>
+      <Filter>SomeEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\SomeEngine\Layer.h">
+      <Filter>SomeEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SomeEngine\LayerStack.h">
+      <Filter>SomeEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SomeEngine\Log.h">
+      <Filter>SomeEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SomeEngine\Window.h">
+      <Filter>SomeEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\SomeEngine\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>SomeEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SomeEngine\Layer.cpp">
+      <Filter>SomeEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SomeEngine\LayerStack.cpp">
+      <Filter>SomeEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\SomeEngine\Log.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>SomeEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\sepch.cpp" />
   </ItemGroup>
 </Project>

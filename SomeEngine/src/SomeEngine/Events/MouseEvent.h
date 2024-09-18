@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace SomeEngine {
 
@@ -81,16 +80,17 @@ namespace SomeEngine {
 		EVENT_CLASS_TYPE(MouseButtonPressed)
 	};
 
-	class SE_API MouseButtomReleasedEvent : public MouseButtonEvent
+	class SE_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtomReleasedEvent(int button)
+		MouseButtonReleasedEvent(int button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override
 		{
 			std::stringstream ss;
 			ss << "MouseButtonReleasedEvent: " << m_Button;
+			return ss.str();
 		}
 
 		EVENT_CLASS_TYPE(MouseButtonReleased)

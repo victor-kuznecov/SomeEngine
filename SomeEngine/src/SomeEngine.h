@@ -2,7 +2,7 @@
 
 // For use by SomeEngine applications
 #include "SomeEngine/Application.h"
-
+#include "SomeEngine/Layer.h"
 #include "SomeEngine/Log.h"
 
 // Entry Point
