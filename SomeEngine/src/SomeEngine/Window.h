@@ -12,7 +12,7 @@ namespace SomeEngine {
 		unsigned int Width;
 		unsigned int Height;
 
-		WindowProps(const std::string& title = "Some Engine", unsigned int width = 1280, unsigned int height = 720)
+		WindowProps(const std::string& title = "Some Engine", unsigned int width = 800, unsigned int height = 600)
 			: Title(title), Width(width), Height(height)
 		{
 		}
